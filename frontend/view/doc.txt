@@ -1,0 +1,11 @@
+App client - Angular 8
+
+Pasos:
+
+1.- Clonar el archivo de Git.
+2.- Hacer un Pull a Git.
+
+3.- Abrir vs Code y ubicarse en la carpeta raiz del proyecto /frontend/view/client.
+4.- Abrir la consola de Git y realizar una instalacion de las dependencias npm -> npm install
+5.- Ejecutar el comando ng serve -o para ejecutar el proyecto.
+6.- Esperar que aparezca la vista de angular. 
