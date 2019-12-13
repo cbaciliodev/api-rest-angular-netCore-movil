@@ -8,8 +8,8 @@ export class SettingsService {
 
   ajustes: Ajustes = {
 
-    temaUrl: 'assets/css/colors/default',
-    tema: 'default'
+    temaUrl: 'assets/css/colors/blue-dark',
+    tema: 'blue-dark'
   
   }
 

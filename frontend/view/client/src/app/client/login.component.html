@@ -5,40 +5,40 @@
     <div class="login-register" style="background-image:url(assets/images/background/login-register.jpg);">
         <div class="login-box card">
             <div class="card-body">
-                <form #f="ngForm" class="form-horizontal form-material" (ngSubmit)="iniciarSesion(f)">
+                <form [formGroup]="_formulario" class="form-horizontal form-material" (ngSubmit)="iniciarSesion()">
                     <h3 class="box-title m-b-20">Iniciar Sesi&oacute;n</h3>
                     <div class="form-group">
+
                         <div class="col-xs-12">
-                            <input name="username" ngModel #username="ngModel" class="form-control" type="email"
+                            <input formControlName="username" name="username" class="form-control" type="email" value=""
                                 placeholder="Email del usuario">
                         </div>
+
+
                     </div>
                     <div class="form-group">
                         <div class="col-xs-12">
-                            <input ngModel name="password" class="form-control" type="password"
+                            <input formControlName="password" name="password" class="form-control" type="password"
                                 placeholder="Contraseña">
                         </div>
                     </div>
 
-                    <p>Username name value :{{username.value}}</p>
-                    <p>Username name value :{{username.valid}}</p>
-                    <p>Username name value :{{username.value | json }}</p>
-                    <p>Username name value :{{f.valid}}</p>
-
                     <div class="form-group row">
                         <div class="col-md-12">
                             <div class="checkbox checkbox-info pull-left p-t-0">
-                                <input [(ngModel)]="recuerdame" name="recuerdame" id="checkbox-signup" type="checkbox"
-                                    class="filled-in chk-col-light-blue">
+                                <input formControlName="recuerdame" name="recuerdame" id="checkbox-signup"
+                                    type="checkbox" class="filled-in chk-col-light-blue">
                                 <label for="checkbox-signup"> Recuerdame </label>
-                            </div> <a id="to-recover" class="text-dark pull-right"><i class="fa fa-lock m-r-5"></i>
+                            </div> 
+                            <a routerLink="/register" id="to-recover" class="text-dark pull-right"><i class="fa fa-lock m-r-5"></i>
                                 Olvidaste tu contraseña</a>
                         </div>
                     </div>
                     <div class="form-group text-center">
                         <div class="col-xs-12 p-b-20">
-                            <!-- <button class="btn btn-block btn-lg btn-info btn-rounded text" type="submit"  >Ingresar</button> -->
-                            <input class="btn btn-block btn-lg btn-info btn-rounded text" type="submit">
+                            <button class="btn btn-block btn-lg btn-info btn-rounded text"
+                                >Ingresar</button>
+                            <!--  <input class="btn btn-block btn-lg btn-info btn-rounded text" type="submit"> -->
                         </div>
                     </div>
                     <div class="row">
@@ -53,12 +53,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group m-b-0">
+                    <!-- <div class="form-group m-b-0">
                         <div class="col-sm-12 text-center">
                             No tienes una cuenta? <a routerLink="/register"
                                 class="text-info m-l-5"><b>Registrate</b></a>
                         </div>
-                    </div>
+                    </div> -->
                 </form>
                 <!-- <form class="form-horizontal" id="recoverform">
                     <div class="form-group ">

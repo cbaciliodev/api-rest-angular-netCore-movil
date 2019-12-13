@@ -4,13 +4,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { PagesModule } from './pages/pages.module';
-import { ClientModule } from './client/client.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /**
  * Componentes
  */
 import { AppComponent } from './app.component';
 import { PagenofoundComponent } from './pagenofound/pagenofound.component';
-
+import { LoginComponent } from './client/login.component';
+import { RegistrarComponent } from './client/registrar.component';
 /**
  * Rutas
  */
@@ -19,9 +20,6 @@ import { APP_ROUTES } from './routes/app.routes';
  * Servicios
  */
 import { ServiceModule } from './services/service.module';
-import { LoginComponent } from './client/login.component';
-import { RegistrarComponent } from './client/registrar.component';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,8 +31,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     PagesModule,
-    //ClientModule,
     FormsModule,
+    ReactiveFormsModule,
     APP_ROUTES,
     ServiceModule
   ],
