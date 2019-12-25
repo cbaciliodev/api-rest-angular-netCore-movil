@@ -13,19 +13,21 @@ declare function init_plugins();
 
 export class LoginComponent implements OnInit {
 
-  _formulario: FormGroup;
+  public _formulario: FormGroup;
 
-  public usuario: Usuario
+  public usuario: Usuario = new Usuario(null, null);
 
   constructor(public _router: Router) {
 
     this._formulario = new FormGroup({
 
       username: new FormControl('', Validators.required),
-      password: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', Validators.required),
       recuerdame: new FormControl(false)
 
     });
+
+    console.log(this._formulario);
   }
 
   ngOnInit() {
@@ -34,7 +36,31 @@ export class LoginComponent implements OnInit {
 
 
   iniciarSesion() {
-  
-    this._router.navigate(["/dashboard"]);
+
+    if (this._formulario.invalid) {
+      console.log(this._formulario.invalid, ' invalid');
+      console.log(this._formulario.valid, ' valid');
+      swal(`Incorrecto`, `Ingrese datos correctos`, `info`);
+      return;
+    }
+
+    this.usuario.username = this._formulario.value.username;
+    this.usuario.password = this._formulario.value.password;
+
+    console.log(this.usuario)
+
+    console.log(this._formulario.invalid, ' invalid');
+    console.log(this._formulario.valid, ' valid');
+    console.log(this._formulario.value);
+
+
+
+    if (this.usuario.username === "bacsystem" && this.usuario.password === "123") {
+      swal(`Correcto`, `${this.usuario.username} - Bienvenido al Sistema`, `success`);
+      this._router.navigate(["/dashboard"]);
+    } else {
+      swal(`Incorrecto`, `Credenciales Incorrectas`, `error`);
+    }
+
   }
 }

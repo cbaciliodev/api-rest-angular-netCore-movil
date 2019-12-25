@@ -10,10 +10,10 @@ export class SidebarService {
       titulo: 'Principal', icono: 'mdi mdi-gauge',
       submenu: [
         {
-          titulo: 'Dashboard', url: '/dashboard'
+          titulo: 'Inicio', url: '/dashboard'
         },
         {
-          titulo: 'Usuarios', url: '/dashboard',
+          titulo: 'Producto', url: '/perfil',
         }
       ]
     }
