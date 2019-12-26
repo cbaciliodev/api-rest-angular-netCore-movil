@@ -8,11 +8,13 @@ import { Routes, RouterModule } from "@angular/router";
 import { PagesComponent } from "../pages.component";
 import { DashboardComponent } from "../dashboard/dashboard.component";
 import { PerfilComponent } from "../perfil/perfil.component";
+import { LoginGuard } from 'src/app/services/services.index';
 
 const pages_routes: Routes = [
   {
     path: "",
     component: PagesComponent,
+    canActivate: [LoginGuard],
     children: [
       {
         path: "dashboard",

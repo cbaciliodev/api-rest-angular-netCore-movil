@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.-web", "1.-web", "{9A114325-2081-4BB4-8266-68F972CDD137}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.-core", "2.-core", "{A670F8B7-041C-4125-B73C-B9C6A6194DD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.-seguridad", "3.-seguridad", "{DD4D4765-B7EA-40A0-A05F-6D52B39961EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.-log", "4.-log", "{696F4747-E7C9-49A4-864B-B672362E8752}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modelo", "modelo", "{7D05C9AB-F00A-4B7E-8020-2CEAB608CB8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dataAccess", "dataAccess", "{9267644A-F881-4BFA-99F6-6CB2E1B2179D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bussines", "bussines", "{B5C6EC11-068D-4346-8AD7-33A995A15939}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D05C9AB-F00A-4B7E-8020-2CEAB608CB8C} = {A670F8B7-041C-4125-B73C-B9C6A6194DD9}
+		{9267644A-F881-4BFA-99F6-6CB2E1B2179D} = {A670F8B7-041C-4125-B73C-B9C6A6194DD9}
+		{B5C6EC11-068D-4346-8AD7-33A995A15939} = {A670F8B7-041C-4125-B73C-B9C6A6194DD9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9ED8920B-6FA3-4013-89EE-CB7EFB58EA48}
+	EndGlobalSection
+EndGlobal

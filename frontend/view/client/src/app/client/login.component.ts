@@ -1,45 +1,52 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { NgForm, FormGroup, FormControl, FormControlName, Validators } from '@angular/forms';
-import { Usuario } from '../models/usuario.model';
-import swal from 'sweetalert'
+import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
+import {
+  NgForm,
+  FormGroup,
+  FormControl,
+  FormControlName,
+  Validators
+} from "@angular/forms";
+import { Usuario } from "../models/usuario.model";
+import swal from "sweetalert";
 
 declare function init_plugins();
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
+  selector: "app-login",
+  templateUrl: "./login.component.html",
   styles: []
 })
-
 export class LoginComponent implements OnInit {
-
   public _formulario: FormGroup;
+
+  username: string = "";
 
   public usuario: Usuario = new Usuario(null, null);
 
   constructor(public _router: Router) {
-
     this._formulario = new FormGroup({
-
-      username: new FormControl('', Validators.required),
-      password: new FormControl('', Validators.required),
+      username: new FormControl("", Validators.required),
+      password: new FormControl("", Validators.required),
       recuerdame: new FormControl(false)
-
     });
-
-    console.log(this._formulario);
   }
 
   ngOnInit() {
     init_plugins();
+
+    this.username = localStorage.getItem("email") || "";
+
+    if (this.username.length > 1) {
+      this._formulario.setValue({
+        username: this.username,
+        password: "",
+        recuerdame: true
+      });
+    }
   }
 
-
   iniciarSesion() {
-
     if (this._formulario.invalid) {
-      console.log(this._formulario.invalid, ' invalid');
-      console.log(this._formulario.valid, ' valid');
       swal(`Incorrecto`, `Ingrese datos correctos`, `info`);
       return;
     }
@@ -47,20 +54,28 @@ export class LoginComponent implements OnInit {
     this.usuario.username = this._formulario.value.username;
     this.usuario.password = this._formulario.value.password;
 
-    console.log(this.usuario)
+    if (this.usuario.username === "bacsystem@gmail.com" &&
+      this.usuario.password === "123") {
+      swal(
+        `Correcto`,
+        `${this.usuario.username} - Bienvenido al Sistema`,
+        `success`
+      );
 
-    console.log(this._formulario.invalid, ' invalid');
-    console.log(this._formulario.valid, ' valid');
-    console.log(this._formulario.value);
+      if (this._formulario.value.recuerdame) {
+        localStorage.setItem("email", this._formulario.value.username);
+      } else {
+        localStorage.removeItem("email");
+      }
 
+      const usuarioSesion = {
+        username: this.usuario.username
+      };
 
-
-    if (this.usuario.username === "bacsystem" && this.usuario.password === "123") {
-      swal(`Correcto`, `${this.usuario.username} - Bienvenido al Sistema`, `success`);
+      localStorage.setItem("username", JSON.stringify(usuarioSesion));
       this._router.navigate(["/dashboard"]);
     } else {
       swal(`Incorrecto`, `Credenciales Incorrectas`, `error`);
     }
-
   }
 }
