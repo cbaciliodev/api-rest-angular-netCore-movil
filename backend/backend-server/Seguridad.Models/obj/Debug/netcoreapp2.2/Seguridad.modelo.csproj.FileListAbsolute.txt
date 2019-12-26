@@ -1,0 +1,7 @@
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.Models\bin\Debug\netcoreapp2.2\Seguridad.modelo.deps.json
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.Models\bin\Debug\netcoreapp2.2\Seguridad.modelo.dll
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.Models\bin\Debug\netcoreapp2.2\Seguridad.modelo.pdb
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.Models\obj\Debug\netcoreapp2.2\Seguridad.modelo.AssemblyInfoInputs.cache
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.Models\obj\Debug\netcoreapp2.2\Seguridad.modelo.AssemblyInfo.cs
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.Models\obj\Debug\netcoreapp2.2\Seguridad.modelo.dll
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.Models\obj\Debug\netcoreapp2.2\Seguridad.modelo.pdb

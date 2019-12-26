@@ -1,0 +1,13 @@
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\bin\Debug\netcoreapp2.2\Seguridad.negocio.deps.json
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\bin\Debug\netcoreapp2.2\Seguridad.negocio.dll
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\bin\Debug\netcoreapp2.2\Seguridad.negocio.pdb
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\bin\Debug\netcoreapp2.2\Seguridad.datos.dll
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\bin\Debug\netcoreapp2.2\Seguridad.modelo.dll
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\bin\Debug\netcoreapp2.2\Seguridad.datos.pdb
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\bin\Debug\netcoreapp2.2\Seguridad.modelo.pdb
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\obj\Debug\netcoreapp2.2\Seguridad.negocio.csprojAssemblyReference.cache
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\obj\Debug\netcoreapp2.2\Seguridad.negocio.AssemblyInfoInputs.cache
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\obj\Debug\netcoreapp2.2\Seguridad.negocio.AssemblyInfo.cs
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\obj\Debug\netcoreapp2.2\Seguridad.negocio.csproj.CopyComplete
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\obj\Debug\netcoreapp2.2\Seguridad.negocio.dll
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.negicio\obj\Debug\netcoreapp2.2\Seguridad.negocio.pdb

@@ -1,0 +1,4 @@
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\bin\Debug\netcoreapp2.2\Seguridad.dataAccess.deps.json
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\bin\Debug\netcoreapp2.2\Seguridad.dataAccess.dll
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\obj\Debug\netcoreapp2.2\Seguridad.dataAccess.AssemblyInfoInputs.cache
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\obj\Debug\netcoreapp2.2\Seguridad.dataAccess.AssemblyInfo.cs

@@ -45,8 +45,7 @@
                 <!-- Search -->
                 <!-- ============================================================== -->
                 <li class="nav-item hidden-xs-down search-box"> <a
-                        class="nav-link hidden-sm-down waves-effect waves-dark" ><i
-                            class="ti-search"></i></a>
+                        class="nav-link hidden-sm-down waves-effect waves-dark"><i class="ti-search"></i></a>
                     <form class="app-search">
                         <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i
                                 class="ti-close"></i></a> </form>
@@ -133,7 +132,7 @@
                                     <div class="u-img"><img src="assets/images/users/1.jpg" alt="user"></div>
                                     <div class="u-text">
                                         <h4>Christian Bacilio</h4>
-                                        <p class="text-muted">dbacilio88@gmail.com</p><a href="#"
+                                        <p class="text-muted">{{usuario.username}}</p><a href="#"
                                             class="btn btn-rounded btn-danger btn-sm">Ver Perfil</a>
                                     </div>
                                 </div>
@@ -143,7 +142,7 @@
                             <li role="separator" class="divider"></li>
                             <li><a href="#"><i class="ti-settings"></i> Configuraci&oacute;n</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a routerLink="/login"><i class="fa fa-power-off"></i> Salir</a></li>
+                            <li><a (click)="_usuarioService.logout();"><i class="fa fa-power-off"></i> Salir</a></li>
                         </ul>
                     </div>
                 </li>

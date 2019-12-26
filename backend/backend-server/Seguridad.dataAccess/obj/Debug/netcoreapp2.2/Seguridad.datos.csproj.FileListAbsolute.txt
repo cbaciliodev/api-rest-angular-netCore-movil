@@ -1,0 +1,11 @@
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\bin\Debug\netcoreapp2.2\Seguridad.datos.deps.json
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\bin\Debug\netcoreapp2.2\Seguridad.datos.dll
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\bin\Debug\netcoreapp2.2\Seguridad.datos.pdb
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\bin\Debug\netcoreapp2.2\Seguridad.modelo.dll
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\bin\Debug\netcoreapp2.2\Seguridad.modelo.pdb
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\obj\Debug\netcoreapp2.2\Seguridad.datos.csprojAssemblyReference.cache
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\obj\Debug\netcoreapp2.2\Seguridad.datos.AssemblyInfoInputs.cache
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\obj\Debug\netcoreapp2.2\Seguridad.datos.AssemblyInfo.cs
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\obj\Debug\netcoreapp2.2\Seguridad.datos.csproj.CopyComplete
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\obj\Debug\netcoreapp2.2\Seguridad.datos.dll
+C:\Users\Developer\3D Objects\tash\github\api-rest-angular-netCore-movil\backend\backend-server\Seguridad.dataAccess\obj\Debug\netcoreapp2.2\Seguridad.datos.pdb

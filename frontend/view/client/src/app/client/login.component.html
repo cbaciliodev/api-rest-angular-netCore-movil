@@ -2,61 +2,33 @@
 <!-- Main wrapper - style you can find in pages.scss -->
 <!-- ============================================================== -->
 <section id="wrapper ">
-  <div
-    class="login-register"
-    style="background-image:url(assets/images/background/login-register.jpg);"
-  >
+  <div class="login-register" style="background-image:url(assets/images/background/login-register.jpg);">
     <div class="login-box card">
       <div class="card-body">
-        <form
-          [formGroup]="_formulario"
-          class="form-horizontal form-material"
-          (ngSubmit)="iniciarSesion()"
-        >
+        <form [formGroup]="_formulario" class="form-horizontal form-material" (ngSubmit)="iniciarSesion()">
           <h3 class="box-title m-b-20">Iniciar Sesi&oacute;n</h3>
           <div class="form-group">
             <div class="col-xs-12">
-              <input
-                formControlName="username"
-                #username
-                name="username"
-                class="form-control"
-                type="email"
-                value=""
-                placeholder="Email del usuario"
-              />
+              <input formControlName="username" #username name="username" class="form-control" type="email" value=""
+                placeholder="Email del usuario" />
             </div>
           </div>
           <div class="form-group">
             <div class="col-xs-12">
-              <input
-                formControlName="password"
-                name="password"
-                class="form-control"
-                type="password"
-                placeholder="Contraseña"
-              />
+              <input formControlName="clave" name="clave" class="form-control" type="password"
+                placeholder="Contraseña" />
             </div>
           </div>
 
           <div class="form-group row">
             <div class="col-md-12">
               <div class="checkbox checkbox-info pull-left p-t-0">
-                <input
-                  formControlName="recuerdame"
-                  name="recuerdame"
-                  id="checkbox-signup"
-                  type="checkbox"
-                  class="filled-in chk-col-light-blue"
-                />
+                <input formControlName="recuerdame" name="recuerdame" id="checkbox-signup" type="checkbox"
+                  class="filled-in chk-col-light-blue" />
                 <label for="checkbox-signup"> Recuerdame </label>
               </div>
-              <a
-                routerLink="/register"
-                id="to-recover"
-                class="text-dark pull-right"
-                ><i class="fa fa-lock m-r-5"></i> Olvidaste tu contraseña</a
-              >
+              <a routerLink="/register" id="to-recover" class="text-dark pull-right"><i class="fa fa-lock m-r-5"></i>
+                Olvidaste tu contraseña</a>
             </div>
           </div>
           <div class="form-group text-center">
@@ -70,21 +42,11 @@
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
               <div class="social">
-                <a
-                  routerLink="/register"
-                  class="btn btn-facebook"
-                  data-toggle="tooltip"
-                  title="Login with Facebook"
-                >
+                <a routerLink="/register" class="btn btn-facebook" data-toggle="tooltip" title="Login with Facebook">
                   <i aria-hidden="true" class="fa fa-facebook-f"> </i>
                 </a>
                 |
-                <a
-                  routerLink="/register"
-                  class="btn btn-googleplus"
-                  data-toggle="tooltip"
-                  title="Login with Google"
-                >
+                <a routerLink="/register" class="btn btn-googleplus" data-toggle="tooltip" title="Login with Google">
                   <i aria-hidden="true" class="fa fa-google-plus"> </i>
                 </a>
               </div>
@@ -93,9 +55,7 @@
           <div class="form-group m-b-0">
             <div class="col-sm-12 text-center">
               No tienes una cuenta?
-              <a routerLink="/register" class="text-info m-l-5"
-                ><b>Registrate</b></a
-              >
+              <a routerLink="/register" class="text-info m-l-5"><b>Registrate</b></a>
             </div>
           </div>
         </form>
