@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
   iniciarSesion() {
 
     if (this._formulario.invalid) {
-      swal(`Incorrecto`, `Ingrese datos correctos`, `info`);
+      swal(`Incorrecto`, `Ingrese sus credenciales`, `info`);
       return;
     }
 

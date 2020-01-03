@@ -30,13 +30,16 @@ export class UsuarioService {
 
     let url = env.nodejs.concat(`usuario`);
     //let url = env.visualStudio.concat(`usuario/login`);
+    console.log(usuario);
 
     return this._httpClient.post(url, usuario)
       .pipe(map((data: any) => {
+        console.log(data.data);
         this.guardarLocalStorage(usuario);
         return true;
       }))
       .pipe(catchError(e => {
+        console.log(e.error.message);
         swal(`Incorrecto`, `${e.error.message}`, `error`);
         return throwError(e);
       }));

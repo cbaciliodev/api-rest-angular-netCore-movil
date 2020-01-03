@@ -9,14 +9,14 @@ const router = express.Router();
 
 router.post('/', (req, res) => {
 
-    let username = req.body;
+    let body = req.body;
 
-    console.log(username);
-
-    usuarioService.login(username)
+    usuarioService.login(body)
         .then((data) => {
+            console.log(data);
             _http.ok(req, res, _c.Ok.code, data);
         }).catch((reason) => {
+            console.log(reason);
             _http.err(req, res, _c.Internal_Server_Error.code, reason, reason);
         });
 });
