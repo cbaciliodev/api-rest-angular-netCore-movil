@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   visualStudio:"https://localhost:5001/api/",
-  nodejs:""
+  nodejs:"http://127.0.0.1:3000/"
 };
 
 /*

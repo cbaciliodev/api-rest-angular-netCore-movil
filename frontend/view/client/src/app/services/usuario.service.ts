@@ -28,7 +28,8 @@ export class UsuarioService {
 
   login(usuario: Usuario) {
 
-    let url = env.visualStudio.concat(`usuario/login`);
+    let url = env.nodejs.concat(`usuario`);
+    //let url = env.visualStudio.concat(`usuario/login`);
 
     return this._httpClient.post(url, usuario)
       .pipe(map((data: any) => {
