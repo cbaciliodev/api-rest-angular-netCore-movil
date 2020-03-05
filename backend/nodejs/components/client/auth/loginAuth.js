@@ -12,8 +12,7 @@ router.post('/', (req, res) => {
             _http.auth(req, res, _c.Ok.code, data);
         }).catch((reason) => {
             _http.unauth(req, res, _c.Internal_Server_Error.code, reason);
-        })
-})
-
+        });
+});
 
 module.exports = router;

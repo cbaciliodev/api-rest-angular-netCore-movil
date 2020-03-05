@@ -24,7 +24,7 @@ const status = {
         code: 500,
         detail: `Internal Server Error`
     }
-}
+};
 
 
 module.exports = status;

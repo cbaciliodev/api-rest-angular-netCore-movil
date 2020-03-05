@@ -5,9 +5,10 @@ const bcryptjs = require('bcryptjs');
 const login = (cliente) => {
 
     console.log(cliente);
+    
     let query = {
         username: { $eq: cliente.username }
-    }
+    };
     
     return new Promise((resolve, reject) => {
         
@@ -48,9 +49,9 @@ const list = () => {
             if (err) reject(err);
 
             resolve(result);
-        })
+        });
 
-    })
+    });
 };
 
 
@@ -61,8 +62,9 @@ const listAll = () => {
         estado: {
             $ne: 3
         }
-    }
-    console.log(estado)
+    };
+
+    console.log(estado);
 
     return new Promise((resolve, reject) => {
 
@@ -71,9 +73,9 @@ const listAll = () => {
             if (err) reject(err);
 
             resolve(result);
-        })
+        });
 
-    })
+    });
 };
 
 const add = (cliente) => {
@@ -93,7 +95,7 @@ const add = (cliente) => {
 
             if (err) reject(err);
             resolve(result);
-        })
+        });
     });
 };
 
@@ -103,7 +105,7 @@ const remove = (id) => {
 
     let query = {
         _id: id
-    }
+    };
 
     console.log(query);
 
@@ -115,10 +117,9 @@ const remove = (id) => {
             if (err) reject(err);
 
             resolve(result);
-        })
+        });
     });
 };
-
 
 module.exports = {
 
@@ -128,4 +129,4 @@ module.exports = {
     remove: remove,
     listAll: listAll
 
-}
+};
