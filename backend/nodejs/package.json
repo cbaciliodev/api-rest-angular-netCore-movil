@@ -1,12 +1,26 @@
 {
   "name": "nodejs",
+<<<<<<< HEAD
   "version": "0.0.1",
   "description": "Api en Nodejs",
   "main": "index.js",
+=======
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "Christian Bacilio de la Cruz",
+  "license": "MIT",
+>>>>>>> 78f1d91eaf9a16857968780e2df9fc4a9e931fca
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
+<<<<<<< HEAD
     "mongoose": "^5.8.4",
     "morgan": "^1.9.1",
     "nodemon": "^2.0.2"
@@ -19,4 +33,10 @@
   },
   "author": "Christian Bacilio de la Cruz",
   "license": "MIT"
+=======
+    "mongoose": "^5.8.3",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  }
+>>>>>>> 78f1d91eaf9a16857968780e2df9fc4a9e931fca
 }
